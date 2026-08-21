@@ -1,5 +1,6 @@
 /* =========================================================
    PMAI LAB — INDIVIDUAL COURSE PAGE
+   Version 2.0
 ========================================================= */
 
 
@@ -23,6 +24,8 @@
 
 .course-page-container {
 
+    width: 100%;
+
     max-width: 1150px;
 
     margin: 0 auto;
@@ -30,9 +33,17 @@
 }
 
 
+/* =========================================================
+   BACK LINK
+========================================================= */
+
 .back-link {
 
-    display: inline-block;
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
 
     margin-bottom: 35px;
 
@@ -42,8 +53,23 @@
 
     font-weight: 700;
 
+    transition: 0.2s ease;
+
 }
 
+
+.back-link:hover {
+
+    transform: translateX(-3px);
+
+    color: var(--primary);
+
+}
+
+
+/* =========================================================
+   COURSE LABEL
+========================================================= */
 
 .course-label {
 
@@ -65,12 +91,18 @@
 
     letter-spacing: 1px;
 
+    text-transform: uppercase;
+
 }
 
 
+/* =========================================================
+   COURSE TITLE
+========================================================= */
+
 .course-page-hero h1 {
 
-    margin-bottom: 8px;
+    margin: 0 0 8px;
 
     color: var(--primary);
 
@@ -81,6 +113,8 @@
     );
 
     line-height: 1.05;
+
+    letter-spacing: -1px;
 
 }
 
@@ -94,6 +128,8 @@
     font-size: 1rem;
 
     font-weight: 800;
+
+    letter-spacing: 0.5px;
 
 }
 
@@ -131,6 +167,8 @@
 
 .course-page-meta div {
 
+    min-width: 0;
+
     padding: 18px;
 
     background: white;
@@ -138,6 +176,17 @@
     border: 1px solid var(--border);
 
     border-radius: 10px;
+
+    transition: 0.2s ease;
+
+}
+
+
+.course-page-meta div:hover {
+
+    border-color: var(--accent);
+
+    transform: translateY(-2px);
 
 }
 
@@ -157,9 +206,13 @@
 
 .course-page-meta strong {
 
+    display: block;
+
     color: var(--primary);
 
     font-size: 0.85rem;
+
+    line-height: 1.4;
 
 }
 
@@ -170,7 +223,7 @@
 
 .course-information {
 
-    padding-top: 80px;
+    padding: 80px 20px 0;
 
 }
 
@@ -213,6 +266,8 @@
 
     font-size: 2rem;
 
+    line-height: 1.25;
+
 }
 
 
@@ -228,6 +283,27 @@
 .course-content-section > p + p {
 
     margin-top: 15px;
+
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-label {
+
+    margin: 0;
+
+    color: var(--accent);
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
 
 }
 
@@ -251,6 +327,17 @@
     border-radius: 12px;
 
     background: white;
+
+    transition: 0.25s ease;
+
+}
+
+
+.instructor-card:hover {
+
+    border-color: var(--accent);
+
+    transform: translateY(-2px);
 
 }
 
@@ -288,6 +375,8 @@
 
     color: var(--primary);
 
+    font-size: 1rem;
+
 }
 
 
@@ -314,7 +403,37 @@
 
 
 /* =========================================================
-   RESOURCE CARDS
+   FACULTY PROFILE LINK
+========================================================= */
+
+.faculty-profile {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    transition: 0.2s ease;
+
+}
+
+
+.faculty-profile:hover {
+
+    color: var(--primary);
+
+    transform: translateX(3px);
+
+}
+
+
+/* =========================================================
+   RESOURCE LIST
 ========================================================= */
 
 .resource-list {
@@ -327,6 +446,10 @@
 
 }
 
+
+/* =========================================================
+   RESOURCE CARD
+========================================================= */
 
 .resource-card {
 
@@ -355,8 +478,16 @@
 
     transform: translateX(3px);
 
+    box-shadow:
+        0 6px 18px
+        rgba(15, 23, 42, 0.06);
+
 }
 
+
+/* =========================================================
+   RESOURCE ICON
+========================================================= */
 
 .resource-icon {
 
@@ -385,9 +516,15 @@
 }
 
 
+/* =========================================================
+   RESOURCE INFORMATION
+========================================================= */
+
 .resource-information {
 
     flex: 1;
+
+    min-width: 0;
 
 }
 
@@ -400,6 +537,8 @@
 
     font-size: 0.95rem;
 
+    line-height: 1.4;
+
 }
 
 
@@ -409,8 +548,14 @@
 
     font-size: 0.78rem;
 
+    line-height: 1.5;
+
 }
 
+
+/* =========================================================
+   RESOURCE BUTTON
+========================================================= */
 
 .resource-button {
 
@@ -428,12 +573,16 @@
 
     font-weight: 800;
 
+    transition: 0.2s ease;
+
 }
 
 
 .resource-button:hover {
 
     background: var(--accent);
+
+    color: white;
 
 }
 
@@ -489,15 +638,30 @@
 
     font-size: 0.8rem;
 
+    transition: 0.2s ease;
+
+}
+
+
+.sidebar-card a:last-child {
+
+    border-bottom: none;
+
 }
 
 
 .sidebar-card a:hover {
 
+    padding-left: 4px;
+
     color: var(--accent);
 
 }
 
+
+/* =========================================================
+   SIDEBAR HIGHLIGHT
+========================================================= */
 
 .sidebar-highlight {
 
@@ -550,11 +714,20 @@
 }
 
 
+.sidebar-highlight a:hover {
+
+    color: #93c5fd;
+
+}
+
+
 /* =========================================================
    CTA
 ========================================================= */
 
 .course-cta {
+
+    margin-top: 20px;
 
     padding: 90px 20px;
 
@@ -582,6 +755,8 @@
 
     font-size: 2.2rem;
 
+    line-height: 1.25;
+
 }
 
 
@@ -597,7 +772,43 @@
 
 
 /* =========================================================
-   RESPONSIVE
+   FOCUS ACCESSIBILITY
+========================================================= */
+
+.back-link:focus-visible,
+.faculty-profile:focus-visible,
+.resource-button:focus-visible,
+.sidebar-card a:focus-visible {
+
+    outline: 3px solid #93c5fd;
+
+    outline-offset: 3px;
+
+    border-radius: 4px;
+
+}
+
+
+/* =========================================================
+   LARGE TABLETS
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .course-layout {
+
+        grid-template-columns:
+            minmax(0, 1fr) 240px;
+
+        gap: 35px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLETS
 ========================================================= */
 
 @media (max-width: 900px) {
@@ -628,11 +839,22 @@
 }
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 600px) {
 
     .course-page-hero {
 
         padding: 60px 20px;
+
+    }
+
+
+    .course-information {
+
+        padding-top: 60px;
 
     }
 
@@ -648,12 +870,84 @@
 
         font-size: 2.8rem;
 
+        letter-spacing: -0.5px;
+
+    }
+
+
+    .course-introduction {
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+
+    }
+
+
+    .course-content-section {
+
+        margin-bottom: 50px;
+
+    }
+
+
+    .course-content-section h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+
+    .instructor-card {
+
+        align-items: flex-start;
+
+        padding: 18px;
+
+    }
+
+
+    .instructor-avatar {
+
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 1.1rem;
+
     }
 
 
     .resource-card {
 
         align-items: flex-start;
+
+        gap: 12px;
+
+        padding: 15px;
+
+    }
+
+
+    .resource-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+    }
+
+
+    .resource-information h3 {
+
+        font-size: 0.88rem;
+
+    }
+
+
+    .resource-information p {
+
+        font-size: 0.74rem;
 
     }
 
@@ -662,12 +956,66 @@
 
         align-self: center;
 
+        padding: 8px 11px;
+
     }
 
 
-    .course-content-section h2 {
+    .sidebar-card {
 
-        font-size: 1.6rem;
+        padding: 18px;
+
+    }
+
+
+    .course-cta {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .course-cta h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .course-page-hero h1 {
+
+        font-size: 2.35rem;
+
+    }
+
+
+    .resource-card {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .resource-information {
+
+        width: calc(
+            100% - 60px
+        );
+
+    }
+
+
+    .resource-button {
+
+        margin-left: 54px;
 
     }
 
