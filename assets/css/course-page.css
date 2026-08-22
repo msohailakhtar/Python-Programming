@@ -1,976 +1,674 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================================================
+   PMAI LAB — INDIVIDUAL COURSE PAGE
+========================================================= */
 
-<head>
 
-    <!-- =====================================================
-         BASIC SEO
-    ====================================================== -->
+/* =========================================================
+   COURSE HERO
+========================================================= */
 
-    <meta charset="UTF-8">
+.course-page-hero {
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    padding: 80px 20px 70px;
 
-    <title>
-        Calculus-I | MATH-101 | PMAI Lab
-    </title>
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #eff6ff
+        );
 
-    <meta name="description"
-          content="MATH-101 Calculus-I course page at PMAI Lab. Access course outline, lecture notes, assignments, quizzes, past papers and additional learning resources.">
+}
 
-    <meta name="keywords"
-          content="Calculus-I, MATH-101, Calculus course, Mathematics course, PMAI Lab, lecture notes, assignments, past papers">
 
-    <meta name="author"
-          content="Python, Mathematics & Artificial Intelligence Lab">
+.course-page-container {
 
+    max-width: 1150px;
 
-    <!-- =====================================================
-         OPEN GRAPH
-    ====================================================== -->
+    margin: 0 auto;
 
-    <meta property="og:title"
-          content="Calculus-I | MATH-101 | PMAI Lab">
+}
 
-    <meta property="og:description"
-          content="Access Calculus-I course materials, lecture notes, assignments, quizzes and past papers.">
 
-    <meta property="og:type"
-          content="website">
+.back-link {
 
+    display: inline-block;
 
-    <!-- =====================================================
-         CSS
-    ====================================================== -->
+    margin-bottom: 35px;
 
-    <!-- IMPORTANT:
-         Because this page is inside a deeper folder,
-         we use ../../../../ to reach the root assets folder.
-    -->
+    color: var(--accent);
 
-    <link rel="stylesheet"
-          href="../../../../assets/css/style.css">
+    font-size: 0.85rem;
 
-    <link rel="stylesheet"
-          href="../../../../assets/css/navbar.css">
+    font-weight: 700;
 
-    <link rel="stylesheet"
-          href="../../../../assets/css/course-page.css">
+}
 
-</head>
 
+.course-label {
 
-<body>
+    display: inline-block;
 
+    margin-bottom: 15px;
 
-    <!-- =====================================================
-                         NAVBAR
-    ====================================================== -->
+    padding: 7px 12px;
 
-    <header id="site-header">
+    border-radius: 20px;
 
-        <nav class="navbar">
+    background: #dbeafe;
 
-            <div class="navbar-container">
+    color: var(--accent);
 
+    font-size: 0.7rem;
 
-                <!-- LOGO -->
+    font-weight: 800;
 
-                <a href="../../../../index.html"
-                   class="navbar-logo"
-                   aria-label="PMAI Lab Home">
+    letter-spacing: 1px;
 
-                    <span class="logo-symbol">
-                        PMAI
-                    </span>
+}
 
-                    <span class="logo-text">
 
-                        <span class="logo-main">
-                            PMAI LAB
-                        </span>
+.course-page-hero h1 {
 
-                        <span class="logo-sub">
-                            Mathematics • Python • AI
-                        </span>
+    margin-bottom: 8px;
 
-                    </span>
+    color: var(--primary);
 
-                </a>
+    font-size: clamp(
+        2.8rem,
+        6vw,
+        4.5rem
+    );
 
+    line-height: 1.05;
 
-                <!-- MOBILE MENU -->
+}
 
-                <button
-                    class="menu-toggle"
-                    id="menu-toggle"
-                    aria-label="Open navigation menu"
-                    aria-expanded="false">
 
-                    ☰
+.course-code-large {
 
-                </button>
+    margin-bottom: 20px;
 
+    color: var(--accent);
 
-                <!-- NAVIGATION -->
+    font-size: 1rem;
 
-                <ul class="nav-menu"
-                    id="nav-menu">
+    font-weight: 800;
 
-                    <li>
-                        <a href="../../../../index.html">
-                            Home
-                        </a>
-                    </li>
+}
 
-                    <li>
-                        <a href="../../../../about.html">
-                            About
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="../../../../courses.html"
-                           class="active">
-                            Courses
-                        </a>
-                    </li>
+.course-introduction {
 
-                    <li>
-                        <a href="../../../../faculty.html">
-                            Faculty
-                        </a>
-                    </li>
+    max-width: 750px;
 
-                    <li>
-                        <a href="../../../../resources.html">
-                            Resources
-                        </a>
-                    </li>
+    margin-bottom: 35px;
 
-                    <li>
-                        <a href="../../../../seminars.html">
-                            Seminars
-                        </a>
-                    </li>
+    color: var(--text-light);
 
-                    <li>
-                        <a href="../../../../projects.html">
-                            Projects
-                        </a>
-                    </li>
+    font-size: 1.05rem;
 
-                    <li>
-                        <a href="../../../../contact.html">
-                            Contact
-                        </a>
-                    </li>
+    line-height: 1.8;
 
-                </ul>
+}
 
-            </div>
 
-        </nav>
+/* =========================================================
+   COURSE META
+========================================================= */
 
-    </header>
+.course-page-meta {
 
+    display: grid;
 
+    grid-template-columns:
+        repeat(4, 1fr);
 
-    <!-- =====================================================
-                         MAIN CONTENT
-    ====================================================== -->
+    gap: 12px;
 
-    <main>
+}
 
 
-        <!-- =================================================
-                     COURSE HERO
-        ================================================== -->
+.course-page-meta div {
 
-        <section class="course-page-hero">
+    padding: 18px;
 
-            <div class="course-page-container">
+    background: white;
 
+    border: 1px solid var(--border);
 
-                <a href="../../../../courses.html"
-                   class="back-link">
+    border-radius: 10px;
 
-                    ← Back to Courses
+}
 
-                </a>
 
+.course-page-meta span {
 
-                <div class="course-label">
+    display: block;
 
-                    MATHEMATICS
+    margin-bottom: 7px;
 
-                </div>
+    color: var(--text-light);
 
+    font-size: 0.7rem;
 
-                <h1>
-                    Calculus-I
-                </h1>
+}
 
 
-                <p class="course-code-large">
-                    MATH-101
-                </p>
+.course-page-meta strong {
 
+    color: var(--primary);
 
-                <p class="course-introduction">
+    font-size: 0.85rem;
 
-                    A foundational mathematics course covering
-                    limits, continuity, differentiation,
-                    integration and their applications.
+}
 
-                </p>
 
+/* =========================================================
+   COURSE INFORMATION
+========================================================= */
 
-                <!-- COURSE META -->
+.course-information {
 
-                <div class="course-page-meta">
+    padding-top: 80px;
 
-                    <div>
+}
 
-                        <span>
-                            Academic Year
-                        </span>
 
-                        <strong>
-                            2026–27
-                        </strong>
+.course-layout {
 
-                    </div>
+    display: grid;
 
+    grid-template-columns:
+        minmax(0, 1fr) 280px;
 
-                    <div>
+    gap: 50px;
 
-                        <span>
-                            Semester
-                        </span>
+    align-items: start;
 
-                        <strong>
-                            Semester 1
-                        </strong>
+}
 
-                    </div>
 
+.course-main-content {
 
-                    <div>
+    min-width: 0;
 
-                        <span>
-                            Discipline
-                        </span>
+}
 
-                        <strong>
-                            Mathematics
-                        </strong>
 
-                    </div>
+.course-content-section {
 
+    margin-bottom: 65px;
 
-                    <div>
+    scroll-margin-top: 100px;
 
-                        <span>
-                            Course Code
-                        </span>
+}
 
-                        <strong>
-                            MATH-101
-                        </strong>
 
-                    </div>
+.course-content-section h2 {
 
-                </div>
+    margin: 10px 0 18px;
 
-            </div>
+    color: var(--primary);
 
-        </section>
+    font-size: 2rem;
 
+}
 
 
-        <!-- =================================================
-                     COURSE INFORMATION
-        ================================================== -->
+.course-content-section > p:not(.section-label) {
 
-        <section class="course-information">
+    color: var(--text-light);
 
-            <div class="course-page-container">
+    line-height: 1.8;
 
+}
 
-                <div class="course-layout">
 
+.course-content-section > p + p {
 
-                    <!-- =====================================
-                             MAIN CONTENT
-                    ====================================== -->
+    margin-top: 15px;
 
-                    <div class="course-main-content">
+}
 
 
-                        <!-- COURSE DESCRIPTION -->
+/* =========================================================
+   INSTRUCTOR
+========================================================= */
 
-                        <section class="course-content-section">
+.instructor-card {
 
-                            <p class="section-label">
-                                COURSE OVERVIEW
-                            </p>
+    display: flex;
 
-                            <h2>
-                                Course Description
-                            </h2>
+    align-items: center;
 
-                            <p>
-                                Calculus-I introduces students to
-                                the fundamental concepts of
-                                differential and integral calculus.
-                                The course develops mathematical
-                                reasoning and provides a foundation
-                                for applications in science,
-                                engineering, computing and
-                                data-driven fields.
-                            </p>
+    gap: 18px;
 
-                            <p>
-                                Topics include limits, continuity,
-                                differentiation, applications of
-                                derivatives, integration and
-                                applications of integrals.
-                            </p>
+    padding: 22px;
 
-                        </section>
+    border: 1px solid var(--border);
 
+    border-radius: 12px;
 
+    background: white;
 
-                        <!-- =================================
-                             COURSE INSTRUCTOR
-                        ================================== -->
+}
 
-                        <section class="course-content-section">
 
-                            <p class="section-label">
-                                COURSE INSTRUCTOR
-                            </p>
+.instructor-avatar {
 
-                            <h2>
-                                Faculty
-                            </h2>
+    width: 60px;
 
+    height: 60px;
 
-                            <div class="instructor-card">
+    flex-shrink: 0;
 
-                                <div class="instructor-avatar">
-                                    M
-                                </div>
+    display: flex;
 
-                                <div>
+    align-items: center;
 
-                                    <h3>
-                                        Faculty Member Name
-                                    </h3>
+    justify-content: center;
 
-                                    <p>
-                                        Lecturer / Assistant Professor
-                                    </p>
+    border-radius: 50%;
 
-                                    <span>
-                                        Mathematics
-                                    </span>
+    background: var(--primary);
 
-                                </div>
+    color: white;
 
-                            </div>
+    font-size: 1.3rem;
 
-                        </section>
+    font-weight: 800;
 
+}
 
 
-                        <!-- =================================
-                             COURSE OUTLINE
-                        ================================== -->
+.instructor-card h3 {
 
-                        <section class="course-content-section">
+    margin-bottom: 5px;
 
-                            <p class="section-label">
-                                COURSE DOCUMENT
-                            </p>
+    color: var(--primary);
 
-                            <h2>
-                                Course Outline
-                            </h2>
+}
 
-                            <div class="resource-card">
 
-                                <div class="resource-icon">
-                                    PDF
-                                </div>
+.instructor-card p {
 
-                                <div class="resource-information">
+    margin-bottom: 4px;
 
-                                    <h3>
-                                        MATH-101 Course Outline
-                                    </h3>
+    color: var(--text-light);
 
-                                    <p>
-                                        Official course outline
-                                        and syllabus.
-                                    </p>
+    font-size: 0.85rem;
 
-                                </div>
+}
 
-                                <a href="course-outline.pdf"
-                                   class="resource-button"
-                                   target="_blank">
 
-                                    View PDF
+.instructor-card span {
 
-                                </a>
+    color: var(--accent);
 
-                            </div>
+    font-size: 0.75rem;
 
-                        </section>
+    font-weight: 700;
 
+}
 
 
-                        <!-- =================================
-                             LECTURE NOTES
-                        ================================== -->
+/* =========================================================
+   RESOURCE CARDS
+========================================================= */
 
-                        <section class="course-content-section">
+.resource-list {
 
-                            <p class="section-label">
-                                LEARNING MATERIALS
-                            </p>
+    display: flex;
 
-                            <h2>
-                                Lecture Notes
-                            </h2>
+    flex-direction: column;
 
+    gap: 12px;
 
-                            <div class="resource-list">
+}
 
 
-                                <div class="resource-card">
+.resource-card {
 
-                                    <div class="resource-icon">
-                                        01
-                                    </div>
+    display: flex;
 
-                                    <div class="resource-information">
+    align-items: center;
 
-                                        <h3>
-                                            Lecture 01 — Introduction
-                                        </h3>
+    gap: 18px;
 
-                                        <p>
-                                            Introduction to calculus
-                                            and mathematical functions.
-                                        </p>
+    padding: 18px;
 
-                                    </div>
+    border: 1px solid var(--border);
 
-                                    <a href="lectures/lecture-01.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+    border-radius: 10px;
 
-                                        PDF
+    background: white;
 
-                                    </a>
+    transition: 0.25s ease;
 
-                                </div>
+}
 
 
-                                <div class="resource-card">
+.resource-card:hover {
 
-                                    <div class="resource-icon">
-                                        02
-                                    </div>
+    border-color: var(--accent);
 
-                                    <div class="resource-information">
+    transform: translateX(3px);
 
-                                        <h3>
-                                            Lecture 02 — Limits
-                                        </h3>
+}
 
-                                        <p>
-                                            Introduction to limits
-                                            and their properties.
-                                        </p>
 
-                                    </div>
+.resource-icon {
 
-                                    <a href="lectures/lecture-02.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+    width: 48px;
 
-                                        PDF
+    height: 48px;
 
-                                    </a>
+    flex-shrink: 0;
 
-                                </div>
+    display: flex;
 
+    align-items: center;
 
-                                <div class="resource-card">
+    justify-content: center;
 
-                                    <div class="resource-icon">
-                                        03
-                                    </div>
+    border-radius: 9px;
 
-                                    <div class="resource-information">
+    background: #eff6ff;
 
-                                        <h3>
-                                            Lecture 03 — Continuity
-                                        </h3>
+    color: var(--accent);
 
-                                        <p>
-                                            Continuity of functions
-                                            and related concepts.
-                                        </p>
+    font-size: 0.7rem;
 
-                                    </div>
+    font-weight: 900;
 
-                                    <a href="lectures/lecture-03.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+}
 
-                                        PDF
 
-                                    </a>
+.resource-information {
 
-                                </div>
+    flex: 1;
 
+}
 
-                            </div>
 
-                        </section>
+.resource-information h3 {
 
+    margin-bottom: 5px;
 
+    color: var(--primary);
 
-                        <!-- =================================
-                             ASSIGNMENTS
-                        ================================== -->
+    font-size: 0.95rem;
 
-                        <section class="course-content-section">
+}
 
-                            <p class="section-label">
-                                PRACTICE
-                            </p>
 
-                            <h2>
-                                Assignments
-                            </h2>
+.resource-information p {
 
+    color: var(--text-light);
 
-                            <div class="resource-list">
+    font-size: 0.78rem;
 
+}
 
-                                <div class="resource-card">
 
-                                    <div class="resource-icon">
-                                        A1
-                                    </div>
+.resource-button {
 
-                                    <div class="resource-information">
+    flex-shrink: 0;
 
-                                        <h3>
-                                            Assignment 01
-                                        </h3>
+    padding: 9px 13px;
 
-                                        <p>
-                                            Basic calculus practice
-                                            problems.
-                                        </p>
+    border-radius: 7px;
 
-                                    </div>
+    background: var(--primary);
 
-                                    <a href="assignments/assignment-01.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+    color: white;
 
-                                        PDF
+    font-size: 0.72rem;
 
-                                    </a>
+    font-weight: 800;
 
-                                </div>
+}
 
 
-                                <div class="resource-card">
+.resource-button:hover {
 
-                                    <div class="resource-icon">
-                                        A2
-                                    </div>
+    background: var(--accent);
 
-                                    <div class="resource-information">
+}
 
-                                        <h3>
-                                            Assignment 02
-                                        </h3>
 
-                                        <p>
-                                            Limits and continuity
-                                            practice problems.
-                                        </p>
+/* =========================================================
+   SIDEBAR
+========================================================= */
 
-                                    </div>
+.course-sidebar {
 
-                                    <a href="assignments/assignment-02.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+    position: sticky;
 
-                                        PDF
+    top: 100px;
 
-                                    </a>
+}
 
-                                </div>
 
+.sidebar-card {
 
-                            </div>
+    margin-bottom: 18px;
 
-                        </section>
+    padding: 22px;
 
+    border: 1px solid var(--border);
 
+    border-radius: 12px;
 
-                        <!-- =================================
-                             QUIZZES
-                        ================================== -->
+    background: white;
 
-                        <section class="course-content-section">
+}
 
-                            <p class="section-label">
-                                ASSESSMENT
-                            </p>
 
-                            <h2>
-                                Quizzes
-                            </h2>
+.sidebar-card h3 {
 
+    margin-bottom: 15px;
 
-                            <div class="resource-list">
+    color: var(--primary);
 
+    font-size: 1rem;
 
-                                <div class="resource-card">
+}
 
-                                    <div class="resource-icon">
-                                        Q1
-                                    </div>
 
-                                    <div class="resource-information">
+.sidebar-card a {
 
-                                        <h3>
-                                            Quiz 01
-                                        </h3>
+    display: block;
 
-                                        <p>
-                                            Quiz covering introductory
-                                            calculus concepts.
-                                        </p>
+    padding: 9px 0;
 
-                                    </div>
+    border-bottom: 1px solid #f1f5f9;
 
-                                    <a href="quizzes/quiz-01.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+    color: var(--text-light);
 
-                                        PDF
+    font-size: 0.8rem;
 
-                                    </a>
+}
 
-                                </div>
 
+.sidebar-card a:hover {
 
-                            </div>
+    color: var(--accent);
 
-                        </section>
+}
 
 
+.sidebar-highlight {
 
-                        <!-- =================================
-                             PAST PAPERS
-                        ================================== -->
+    background: var(--primary);
 
-                        <section class="course-content-section">
+    color: white;
 
-                            <p class="section-label">
-                                EXAMINATION RESOURCES
-                            </p>
+}
 
-                            <h2>
-                                Past Papers
-                            </h2>
 
+.sidebar-highlight span {
 
-                            <div class="resource-list">
+    color: #93c5fd;
 
+    font-size: 0.7rem;
 
-                                <div class="resource-card">
+    font-weight: 800;
 
-                                    <div class="resource-icon">
-                                        MT
-                                    </div>
+}
 
-                                    <div class="resource-information">
 
-                                        <h3>
-                                            Midterm Examination
-                                        </h3>
+.sidebar-highlight h3 {
 
-                                        <p>
-                                            Previous midterm
-                                            examination paper.
-                                        </p>
+    margin-top: 8px;
 
-                                    </div>
+    color: white;
 
-                                    <a href="past-papers/midterm.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+}
 
-                                        PDF
 
-                                    </a>
+.sidebar-highlight p {
 
-                                </div>
+    margin: 5px 0;
 
+    color: #cbd5e1;
 
-                                <div class="resource-card">
+    font-size: 0.8rem;
 
-                                    <div class="resource-icon">
-                                        FN
-                                    </div>
+}
 
-                                    <div class="resource-information">
 
-                                        <h3>
-                                            Final Examination
-                                        </h3>
+.sidebar-highlight a {
 
-                                        <p>
-                                            Previous final
-                                            examination paper.
-                                        </p>
+    margin-top: 15px;
 
-                                    </div>
+    border: none;
 
-                                    <a href="past-papers/final.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+    color: white;
 
-                                        PDF
+}
 
-                                    </a>
 
-                                </div>
+/* =========================================================
+   CTA
+========================================================= */
 
+.course-cta {
 
-                            </div>
+    padding: 90px 20px;
 
-                        </section>
+    text-align: center;
 
+    background: var(--surface);
 
+}
 
-                        <!-- =================================
-                             ADDITIONAL RESOURCES
-                        ================================== -->
 
-                        <section class="course-content-section">
+.course-cta > div {
 
-                            <p class="section-label">
-                                FURTHER LEARNING
-                            </p>
+    max-width: 700px;
 
-                            <h2>
-                                Additional Resources
-                            </h2>
+    margin: 0 auto;
 
+}
 
-                            <div class="resource-list">
 
+.course-cta h2 {
 
-                                <div class="resource-card">
+    margin: 10px 0 15px;
 
-                                    <div class="resource-icon">
-                                        R1
-                                    </div>
+    color: var(--primary);
 
-                                    <div class="resource-information">
+    font-size: 2.2rem;
 
-                                        <h3>
-                                            Reference Material
-                                        </h3>
+}
 
-                                        <p>
-                                            Supplementary mathematical
-                                            learning material.
-                                        </p>
 
-                                    </div>
+.course-cta p:not(.section-label) {
 
-                                    <a href="additional-resources/reference-material.pdf"
-                                       class="resource-button"
-                                       target="_blank">
+    margin-bottom: 25px;
 
-                                        PDF
+    color: var(--text-light);
 
-                                    </a>
+    line-height: 1.7;
 
-                                </div>
+}
 
 
-                            </div>
+/* =========================================================
+   RESPONSIVE
+========================================================= */
 
-                        </section>
+@media (max-width: 900px) {
 
+    .course-layout {
 
-                    </div>
+        grid-template-columns: 1fr;
 
+    }
 
 
-                    <!-- =====================================
-                             SIDEBAR
-                    ====================================== -->
+    .course-sidebar {
 
-                    <aside class="course-sidebar">
+        position: static;
 
+        order: -1;
 
-                        <div class="sidebar-card">
+    }
 
-                            <h3>
-                                Course Navigation
-                            </h3>
 
+    .course-page-meta {
 
-                            <a href="#overview">
-                                Course Overview
-                            </a>
+        grid-template-columns:
+            repeat(2, 1fr);
 
-                            <a href="#faculty">
-                                Faculty
-                            </a>
+    }
 
-                            <a href="#outline">
-                                Course Outline
-                            </a>
+}
 
-                            <a href="#lectures">
-                                Lecture Notes
-                            </a>
 
-                            <a href="#assignments">
-                                Assignments
-                            </a>
+@media (max-width: 600px) {
 
-                            <a href="#quizzes">
-                                Quizzes
-                            </a>
+    .course-page-hero {
 
-                            <a href="#past-papers">
-                                Past Papers
-                            </a>
+        padding: 60px 20px;
 
-                            <a href="#resources">
-                                Additional Resources
-                            </a>
+    }
 
-                        </div>
 
+    .course-page-meta {
 
-                        <div class="sidebar-card sidebar-highlight">
+        grid-template-columns: 1fr;
 
-                            <span>
-                                MATH-101
-                            </span>
+    }
 
-                            <h3>
-                                Calculus-I
-                            </h3>
 
-                            <p>
-                                Mathematics
-                            </p>
+    .course-page-hero h1 {
 
-                            <p>
-                                Semester 1
-                            </p>
+        font-size: 2.8rem;
 
-                            <a href="../../../../courses.html">
+    }
 
-                                ← All Courses
 
-                            </a>
+    .resource-card {
 
-                        </div>
+        align-items: flex-start;
 
+    }
 
-                    </aside>
 
+    .resource-button {
 
-                </div>
+        align-self: center;
 
-            </div>
+    }
 
-        </section>
 
+    .course-content-section h2 {
 
+        font-size: 1.6rem;
 
-        <!-- =================================================
-                         CTA
-        ================================================== -->
+    }
 
-        <section class="course-cta">
-
-            <div>
-
-                <p class="section-label">
-                    PMAI LAB
-                </p>
-
-                <h2>
-                    Looking for More Courses?
-                </h2>
-
-                <p>
-                    Explore the complete PMAI Lab course
-                    directory and discover additional
-                    academic resources.
-                </p>
-
-                <a href="../../../../courses.html"
-                   class="btn btn-primary">
-
-                    Explore All Courses
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-
-    <!-- =====================================================
-                         FOOTER
-    ====================================================== -->
-
-    <footer id="site-footer">
-
-        <p>
-            © 2026 Python, Mathematics & Artificial
-            Intelligence Lab. All Rights Reserved.
-        </p>
-
-    </footer>
-
-
-    <!-- =====================================================
-                         JAVASCRIPT
-    ====================================================== -->
-
-    <script src="../../../../assets/js/main.js"></script>
-
-</body>
-
-</html>
+}
