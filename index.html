@@ -12,19 +12,18 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Python Programming | PMAI Lab</title>
+    <title>
+        Calculus-I | MATH-101 | PMAI Lab
+    </title>
 
     <meta name="description"
-          content="Python Programming course materials including course outline, lecture notes, assignments, quizzes, projects and additional learning resources.">
+          content="MATH-101 Calculus-I course page at PMAI Lab. Access course outline, lecture notes, assignments, quizzes, past papers and additional learning resources.">
 
     <meta name="keywords"
-          content="Python Programming, Python, Programming, Python course, Python lecture notes, Python assignments, Python projects, PMAI Lab">
+          content="Calculus-I, MATH-101, Calculus course, Mathematics course, PMAI Lab, lecture notes, assignments, past papers">
 
     <meta name="author"
           content="Python, Mathematics & Artificial Intelligence Lab">
-
-    <meta name="robots"
-          content="index, follow">
 
 
     <!-- =====================================================
@@ -32,27 +31,32 @@
     ====================================================== -->
 
     <meta property="og:title"
-          content="Python Programming | PMAI Lab">
+          content="Calculus-I | MATH-101 | PMAI Lab">
 
     <meta property="og:description"
-          content="Access Python Programming course materials, lecture notes, assignments, quizzes, projects and additional learning resources.">
+          content="Access Calculus-I course materials, lecture notes, assignments, quizzes and past papers.">
 
     <meta property="og:type"
           content="website">
 
-    <meta property="og:url"
-          content="https://msohailakhtar.github.io/Python-Programming/">
-
-    <meta property="og:site_name"
-          content="Python, Mathematics & Artificial Intelligence Lab">
-
 
     <!-- =====================================================
-         COURSE PAGE CSS
+         CSS
     ====================================================== -->
 
+    <!-- IMPORTANT:
+         Because this page is inside a deeper folder,
+         we use ../../../../ to reach the root assets folder.
+    -->
+
     <link rel="stylesheet"
-          href="course-page.css">
+          href="../../../../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../../../../assets/css/navbar.css">
+
+    <link rel="stylesheet"
+          href="../../../../assets/css/course-page.css">
 
 </head>
 
@@ -61,117 +65,113 @@
 
 
     <!-- =====================================================
-                         COURSE HERO
+                         NAVBAR
     ====================================================== -->
 
-    <header class="course-page-hero">
+    <header id="site-header">
 
-        <div class="course-page-container">
+        <nav class="navbar">
 
-
-            <!-- BACK TO MAIN PMAI LAB -->
-
-            <a href="https://python-mathematics-ai-lab.github.io/courses/"
-               class="back-link">
-
-                ← PMAI Lab
-
-            </a>
+            <div class="navbar-container">
 
 
-            <!-- COURSE CATEGORY -->
+                <!-- LOGO -->
 
-            <div class="course-label">
-                COMPUTER PROGRAMMING
-            </div>
+                <a href="../../../../index.html"
+                   class="navbar-logo"
+                   aria-label="PMAI Lab Home">
 
-
-            <!-- COURSE TITLE -->
-
-            <h1>
-                Python Programming
-            </h1>
-
-
-            <!-- COURSE CODE -->
-
-            <p class="course-code-large">
-                PYTHON-101
-            </p>
-
-
-            <!-- COURSE INTRODUCTION -->
-
-            <p class="course-introduction">
-
-                A foundational programming course designed to
-                develop practical Python programming skills for
-                mathematics, data science, artificial intelligence
-                and computational applications.
-
-            </p>
-
-
-            <!-- COURSE META -->
-
-            <div class="course-page-meta">
-
-
-                <div>
-
-                    <span>
-                        Academic Year
+                    <span class="logo-symbol">
+                        PMAI
                     </span>
 
-                    <strong>
-                        2026–27
-                    </strong>
+                    <span class="logo-text">
 
-                </div>
+                        <span class="logo-main">
+                            PMAI LAB
+                        </span>
 
+                        <span class="logo-sub">
+                            Mathematics • Python • AI
+                        </span>
 
-                <div>
-
-                    <span>
-                        Semester
                     </span>
 
-                    <strong>
-                        Semester 1
-                    </strong>
-
-                </div>
+                </a>
 
 
-                <div>
+                <!-- MOBILE MENU -->
 
-                    <span>
-                        Discipline
-                    </span>
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
 
-                    <strong>
-                        Computer Programming
-                    </strong>
+                    ☰
 
-                </div>
+                </button>
 
 
-                <div>
+                <!-- NAVIGATION -->
 
-                    <span>
-                        Course Code
-                    </span>
+                <ul class="nav-menu"
+                    id="nav-menu">
 
-                    <strong>
-                        PYTHON-101
-                    </strong>
+                    <li>
+                        <a href="../../../../index.html">
+                            Home
+                        </a>
+                    </li>
 
-                </div>
+                    <li>
+                        <a href="../../../../about.html">
+                            About
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="../../../../courses.html"
+                           class="active">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../../faculty.html">
+                            Faculty
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../../resources.html">
+                            Resources
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../../seminars.html">
+                            Seminars
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../../projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../../contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
 
             </div>
 
-        </div>
+        </nav>
 
     </header>
 
@@ -184,26 +184,134 @@
     <main>
 
 
+        <!-- =================================================
+                     COURSE HERO
+        ================================================== -->
+
+        <section class="course-page-hero">
+
+            <div class="course-page-container">
+
+
+                <a href="../../../../courses.html"
+                   class="back-link">
+
+                    ← Back to Courses
+
+                </a>
+
+
+                <div class="course-label">
+
+                    MATHEMATICS
+
+                </div>
+
+
+                <h1>
+                    Calculus-I
+                </h1>
+
+
+                <p class="course-code-large">
+                    MATH-101
+                </p>
+
+
+                <p class="course-introduction">
+
+                    A foundational mathematics course covering
+                    limits, continuity, differentiation,
+                    integration and their applications.
+
+                </p>
+
+
+                <!-- COURSE META -->
+
+                <div class="course-page-meta">
+
+                    <div>
+
+                        <span>
+                            Academic Year
+                        </span>
+
+                        <strong>
+                            2026–27
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Semester
+                        </span>
+
+                        <strong>
+                            Semester 1
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Discipline
+                        </span>
+
+                        <strong>
+                            Mathematics
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Course Code
+                        </span>
+
+                        <strong>
+                            MATH-101
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+                     COURSE INFORMATION
+        ================================================== -->
+
         <section class="course-information">
 
             <div class="course-page-container">
 
+
                 <div class="course-layout">
 
 
-                    <!-- =================================================
+                    <!-- =====================================
                              MAIN CONTENT
-                    ================================================== -->
+                    ====================================== -->
 
                     <div class="course-main-content">
 
 
-                        <!-- =================================================
-                             COURSE DESCRIPTION
-                        ================================================== -->
+                        <!-- COURSE DESCRIPTION -->
 
-                        <section id="overview"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
                                 COURSE OVERVIEW
@@ -213,45 +321,33 @@
                                 Course Description
                             </h2>
 
-
                             <p>
-
-                                Python Programming introduces students
-                                to the fundamental concepts of
-                                programming using the Python language.
-
-                                The course develops computational
-                                thinking, problem-solving skills and
-                                programming practices required for
-                                modern mathematics, data science,
-                                artificial intelligence and machine
-                                learning.
-
+                                Calculus-I introduces students to
+                                the fundamental concepts of
+                                differential and integral calculus.
+                                The course develops mathematical
+                                reasoning and provides a foundation
+                                for applications in science,
+                                engineering, computing and
+                                data-driven fields.
                             </p>
 
-
                             <p>
-
-                                Topics include variables, data types,
-                                operators, input and output,
-                                conditional statements, loops,
-                                functions, data structures,
-                                file handling, object-oriented
-                                programming and introductory
-                                scientific computing with Python.
-
+                                Topics include limits, continuity,
+                                differentiation, applications of
+                                derivatives, integration and
+                                applications of integrals.
                             </p>
 
                         </section>
 
 
 
-                        <!-- =================================================
+                        <!-- =================================
                              COURSE INSTRUCTOR
-                        ================================================== -->
+                        ================================== -->
 
-                        <section id="faculty"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
                                 COURSE INSTRUCTOR
@@ -264,31 +360,25 @@
 
                             <div class="instructor-card">
 
-
                                 <div class="instructor-avatar">
                                     M
                                 </div>
 
-
                                 <div>
 
                                     <h3>
-                                        Muhammad Sohail Akhtar
+                                        Faculty Member Name
                                     </h3>
 
-
                                     <p>
-                                        Senior Lecturer / PhD Scholar
+                                        Lecturer / Assistant Professor
                                     </p>
 
-
                                     <span>
-                                        Mathematics • Python • AI
+                                        Mathematics
                                     </span>
 
-
                                 </div>
-
 
                             </div>
 
@@ -296,12 +386,11 @@
 
 
 
-                        <!-- =================================================
+                        <!-- =================================
                              COURSE OUTLINE
-                        ================================================== -->
+                        ================================== -->
 
-                        <section id="outline"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
                                 COURSE DOCUMENT
@@ -311,39 +400,32 @@
                                 Course Outline
                             </h2>
 
-
                             <div class="resource-card">
-
 
                                 <div class="resource-icon">
                                     PDF
                                 </div>
 
-
                                 <div class="resource-information">
 
                                     <h3>
-                                        Python Programming Course Outline
+                                        MATH-101 Course Outline
                                     </h3>
 
-
                                     <p>
-                                        Official course outline,
-                                        syllabus and learning objectives.
+                                        Official course outline
+                                        and syllabus.
                                     </p>
 
                                 </div>
 
-
                                 <a href="course-outline.pdf"
                                    class="resource-button"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
+                                   target="_blank">
 
                                     View PDF
 
                                 </a>
-
 
                             </div>
 
@@ -351,12 +433,11 @@
 
 
 
-                        <!-- =================================================
+                        <!-- =================================
                              LECTURE NOTES
-                        ================================================== -->
+                        ================================== -->
 
-                        <section id="lectures"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
                                 LEARNING MATERIALS
@@ -370,117 +451,92 @@
                             <div class="resource-list">
 
 
-                                <!-- LECTURE 01 -->
-
                                 <div class="resource-card">
-
 
                                     <div class="resource-icon">
                                         01
                                     </div>
 
-
                                     <div class="resource-information">
 
                                         <h3>
-                                            Lecture 01 — Introduction to Python
+                                            Lecture 01 — Introduction
                                         </h3>
 
                                         <p>
-                                            Introduction to Python,
-                                            programming concepts and
-                                            development environments.
+                                            Introduction to calculus
+                                            and mathematical functions.
                                         </p>
 
                                     </div>
 
-
                                     <a href="lectures/lecture-01.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
 
-
                                 </div>
 
 
-
-                                <!-- LECTURE 02 -->
-
                                 <div class="resource-card">
-
 
                                     <div class="resource-icon">
                                         02
                                     </div>
 
-
                                     <div class="resource-information">
 
                                         <h3>
-                                            Lecture 02 — Variables & Data Types
+                                            Lecture 02 — Limits
                                         </h3>
 
                                         <p>
-                                            Variables, numbers, strings,
-                                            Boolean values and basic
-                                            Python data types.
+                                            Introduction to limits
+                                            and their properties.
                                         </p>
 
                                     </div>
 
-
                                     <a href="lectures/lecture-02.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
 
-
                                 </div>
 
 
-
-                                <!-- LECTURE 03 -->
-
                                 <div class="resource-card">
-
 
                                     <div class="resource-icon">
                                         03
                                     </div>
 
-
                                     <div class="resource-information">
 
                                         <h3>
-                                            Lecture 03 — Input & Output
+                                            Lecture 03 — Continuity
                                         </h3>
 
                                         <p>
-                                            User input, output formatting
-                                            and type conversion in Python.
+                                            Continuity of functions
+                                            and related concepts.
                                         </p>
 
                                     </div>
 
-
                                     <a href="lectures/lecture-03.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
-
 
                                 </div>
 
@@ -491,12 +547,11 @@
 
 
 
-                        <!-- =================================================
+                        <!-- =================================
                              ASSIGNMENTS
-                        ================================================== -->
+                        ================================== -->
 
-                        <section id="assignments"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
                                 PRACTICE
@@ -510,77 +565,62 @@
                             <div class="resource-list">
 
 
-                                <!-- ASSIGNMENT 01 -->
-
                                 <div class="resource-card">
-
 
                                     <div class="resource-icon">
                                         A1
                                     </div>
 
-
                                     <div class="resource-information">
 
                                         <h3>
-                                            Assignment 01 — Python Basics
+                                            Assignment 01
                                         </h3>
 
                                         <p>
-                                            Basic Python programming
-                                            practice problems.
+                                            Basic calculus practice
+                                            problems.
                                         </p>
 
                                     </div>
 
-
                                     <a href="assignments/assignment-01.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
 
-
                                 </div>
 
 
-
-                                <!-- ASSIGNMENT 02 -->
-
                                 <div class="resource-card">
-
 
                                     <div class="resource-icon">
                                         A2
                                     </div>
 
-
                                     <div class="resource-information">
 
                                         <h3>
-                                            Assignment 02 — Control Flow
+                                            Assignment 02
                                         </h3>
 
                                         <p>
-                                            Practice problems using
-                                            conditions and loops.
+                                            Limits and continuity
+                                            practice problems.
                                         </p>
 
                                     </div>
 
-
                                     <a href="assignments/assignment-02.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
-
 
                                 </div>
 
@@ -591,12 +631,11 @@
 
 
 
-                        <!-- =================================================
+                        <!-- =================================
                              QUIZZES
-                        ================================================== -->
+                        ================================== -->
 
-                        <section id="quizzes"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
                                 ASSESSMENT
@@ -612,35 +651,30 @@
 
                                 <div class="resource-card">
 
-
                                     <div class="resource-icon">
                                         Q1
                                     </div>
 
-
                                     <div class="resource-information">
 
                                         <h3>
-                                            Quiz 01 — Python Fundamentals
+                                            Quiz 01
                                         </h3>
 
                                         <p>
                                             Quiz covering introductory
-                                            Python programming concepts.
+                                            calculus concepts.
                                         </p>
 
                                     </div>
 
-
                                     <a href="quizzes/quiz-01.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
-
 
                                 </div>
 
@@ -651,19 +685,18 @@
 
 
 
-                        <!-- =================================================
-                             PROJECTS
-                        ================================================== -->
+                        <!-- =================================
+                             PAST PAPERS
+                        ================================== -->
 
-                        <section id="projects"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
-                                PRACTICAL LEARNING
+                                EXAMINATION RESOURCES
                             </p>
 
                             <h2>
-                                Projects
+                                Past Papers
                             </h2>
 
 
@@ -672,35 +705,60 @@
 
                                 <div class="resource-card">
 
-
                                     <div class="resource-icon">
-                                        P1
+                                        MT
                                     </div>
-
 
                                     <div class="resource-information">
 
                                         <h3>
-                                            Python Mini Project
+                                            Midterm Examination
                                         </h3>
 
                                         <p>
-                                            Practical programming project
-                                            applying Python fundamentals.
+                                            Previous midterm
+                                            examination paper.
                                         </p>
 
                                     </div>
 
-
-                                    <a href="projects/project-01.pdf"
+                                    <a href="past-papers/midterm.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
 
+                                </div>
+
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        FN
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Final Examination
+                                        </h3>
+
+                                        <p>
+                                            Previous final
+                                            examination paper.
+                                        </p>
+
+                                    </div>
+
+                                    <a href="past-papers/final.pdf"
+                                       class="resource-button"
+                                       target="_blank">
+
+                                        PDF
+
+                                    </a>
 
                                 </div>
 
@@ -711,12 +769,11 @@
 
 
 
-                        <!-- =================================================
+                        <!-- =================================
                              ADDITIONAL RESOURCES
-                        ================================================== -->
+                        ================================== -->
 
-                        <section id="resources"
-                                 class="course-content-section">
+                        <section class="course-content-section">
 
                             <p class="section-label">
                                 FURTHER LEARNING
@@ -732,35 +789,30 @@
 
                                 <div class="resource-card">
 
-
                                     <div class="resource-icon">
                                         R1
                                     </div>
 
-
                                     <div class="resource-information">
 
                                         <h3>
-                                            Python Reference Material
+                                            Reference Material
                                         </h3>
 
                                         <p>
-                                            Supplementary Python programming
+                                            Supplementary mathematical
                                             learning material.
                                         </p>
 
                                     </div>
 
-
                                     <a href="additional-resources/reference-material.pdf"
                                        class="resource-button"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
+                                       target="_blank">
 
                                         PDF
 
                                     </a>
-
 
                                 </div>
 
@@ -774,14 +826,12 @@
 
 
 
-                    <!-- =================================================
+                    <!-- =====================================
                              SIDEBAR
-                    ================================================== -->
+                    ====================================== -->
 
                     <aside class="course-sidebar">
 
-
-                        <!-- COURSE NAVIGATION -->
 
                         <div class="sidebar-card">
 
@@ -794,77 +844,60 @@
                                 Course Overview
                             </a>
 
-
                             <a href="#faculty">
                                 Faculty
                             </a>
-
 
                             <a href="#outline">
                                 Course Outline
                             </a>
 
-
                             <a href="#lectures">
                                 Lecture Notes
                             </a>
-
 
                             <a href="#assignments">
                                 Assignments
                             </a>
 
-
                             <a href="#quizzes">
                                 Quizzes
                             </a>
 
-
-                            <a href="#projects">
-                                Projects
+                            <a href="#past-papers">
+                                Past Papers
                             </a>
-
 
                             <a href="#resources">
                                 Additional Resources
                             </a>
 
-
                         </div>
 
 
-
-                        <!-- COURSE SUMMARY -->
-
                         <div class="sidebar-card sidebar-highlight">
 
-
                             <span>
-                                PYTHON-101
+                                MATH-101
                             </span>
 
-
                             <h3>
-                                Python Programming
+                                Calculus-I
                             </h3>
 
-
                             <p>
-                                Computer Programming
+                                Mathematics
                             </p>
-
 
                             <p>
                                 Semester 1
                             </p>
 
+                            <a href="../../../../courses.html">
 
-                            <a href="https://python-mathematics-ai-lab.github.io/courses/">
-
-                                ← PMAI Lab
+                                ← All Courses
 
                             </a>
-
 
                         </div>
 
@@ -880,41 +913,34 @@
 
 
 
-        <!-- =====================================================
-                         CALL TO ACTION
-        ====================================================== -->
+        <!-- =================================================
+                         CTA
+        ================================================== -->
 
         <section class="course-cta">
 
             <div>
 
-
                 <p class="section-label">
                     PMAI LAB
                 </p>
 
-
                 <h2>
-                    Explore More Learning Resources
+                    Looking for More Courses?
                 </h2>
 
-
                 <p>
-
-                    Visit the PMAI Lab to explore additional
-                    courses, mathematics resources, AI projects
-                    and programming materials.
-
+                    Explore the complete PMAI Lab course
+                    directory and discover additional
+                    academic resources.
                 </p>
 
-
-                <a href="https://python-mathematics-ai-lab.github.io/courses/"
+                <a href="../../../../courses.html"
                    class="btn btn-primary">
 
-                    Visit PMAI Lab
+                    Explore All Courses
 
                 </a>
-
 
             </div>
 
@@ -932,14 +958,18 @@
     <footer id="site-footer">
 
         <p>
-
             © 2026 Python, Mathematics & Artificial
             Intelligence Lab. All Rights Reserved.
-
         </p>
 
     </footer>
 
+
+    <!-- =====================================================
+                         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../../../../assets/js/main.js"></script>
 
 </body>
 
